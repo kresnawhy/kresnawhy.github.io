@@ -1,0 +1,7 @@
+1	Prof. Dr. Yuli Witono, S.TP.,MP	 	Ketua
+2	I Wayan Yasa, SH.,MH	 		Wakil Ketua
+3	Bambang Wagiman, SP.,MM	 		Sekretaris
+4	Dra. Ririn Irmadariyani,M.Si, Ak,CA	Bendahara I
+5	Hadi Paramu, SE.,M.BA.,Ph.D	 	Bendahara II
+6	Ir. Anik Suwandari, M.P.	 	Angt Pengurus I
+7	Dr. Slamet Hariyadi, M.Si	 	Angt. Pengurus II

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN</title>
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background: #3e3d3d;
+		font-family: sans-serif;
+	}
+	.formkoperasi{
+		margin-top: 13%;
+		width: 500px;
+		background: #fff;
+		padding: 40px 20px;
+		box-sizing: border-box;
+		position: fixed;
+		left: 37.5%;
+		top: 0%
+	}
+	.formkoperasi h1 {
+		text-align: center;
+		color: #39b54a;
+		font-weight: normal;
+		margin-bottom: 20px;
+	}
+	input[type=mail], input[type=Password]{
+		width: 100%;
+		background: none;
+		border: none;
+		border-bottom: 2px solid #39b54a;
+		padding: 6px 15px;
+		box-sizing: border-box;
+		margin-bottom: 20px;
+		font-size: 16px;
+		color: #39b54a;
+	}
+	input[type=button]{
+		background: #39b54a;
+		padding: 15px 60px;
+		border: 0;
+		cursor: pointer;
+		color: #fff;
+		margin-left: 32.5%;
+	} 
+	input[type=button]:hover{
+		background: white;
+		transition: .6s;
+		color: #39b54a;
+	}
+	::placeholder { 
+    	color: #39b54a;
+    }
+	*:focus {
+    	outline: none;
+	}
+	img {
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    width: 30%;
+	}
+	a:link {
+		margin-left: 33.5%;
+    	text-decoration: none;
+	}
+	a:hover {
+		color: #39b54a;
+		text-decoration: none;
+	}
+</style>
+<body>
+	<div class="formkoperasi">
+		<form>
+			<img src="logo.png" alt="logo kpri">
+			<h1>LOGIN</h1>
+			<input type="mail" placeholder="Email" required pattern=".+@.+.com" required>
+			<input type="Password" placeholder="Password" minlength="8" required>
+			<input type="button" value="LOGIN">
+		</form>
+	</div>
+</body>
