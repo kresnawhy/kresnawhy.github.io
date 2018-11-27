@@ -4,8 +4,87 @@ html, body{
   height: 100%;
   scroll-behavior: smooth;
 }
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+  padding: 2em;
+  display: block;
+}
+section {
+  display: block;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.kolom-one {
+  width: 8.33333%;
+}
+
+.kolom-two {
+  width: 16.66667%;
+}
+
+.kolom-three{
+  width: 30%;
+}
+
+.kolom-four{
+  width: 33.33333%;
+}
+
+.kolom-five {
+  width: 41.66667%;
+}
+
+.kolom-six{
+  width: 50%;
+}
+
+.kolom-seven {
+  width: 58.33333%;
+}
+
+.kolom-eight{
+  width: 66.66667%;
+}
+
+.kolom-nine {
+  width: 75%;
+}
+
+.kolom-ten{
+  width: 83.33333%;
+}
+
+.kolom-eleven {
+  width: 91.66667%;
+}
+
+.kolom-full {
+  width: 100%;
+}
+
+[class*="kolom-"],
+.bgrid {
+  float: left;
+}
+
+[class*="kolom-"]+[class*="kolom-"].end {
+  float: right;
+}
+
+[class*="kolom-"] {
+  padding: 0 12px;
+}
 .topnav {
-  width: 80%;
+  width: 100%;
   height: 62px;
   background-color: #111111;
   position: fixed;
@@ -15,6 +94,23 @@ html, body{
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+.row{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topnav-logo{
+  width: 200px;
+  height: 40px;
+  border : 0;
 }
 
 .topnav a {
@@ -37,6 +133,7 @@ html, body{
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
+  border-radius: 4px;
 }
 
 .topnav-right {
@@ -59,124 +156,512 @@ a.button:hover{
   background-color: #48f442;
 }
 
+@media only screen and (max-width: 1230px) {
+  #header {
+    max-width: none;
+  }
+}  
+
+.konten{
+  position: relative;
+}
+
 .home{
   background: url("img/homebg.jpg");
   background-size: cover;
-  height: 100%;
+  width: 100%;
+  height: 680px;
   background-position: center;
   position: relative;
   background-repeat: no-repeat; 
 }
-.logo{
-  float: right;
-  margin: 180px;
-}
-.about{
-  background-color: white;
-  height: 220%;
-  position: relative;
 
-}
-.organisasi{
-  background-color: #33CC00;
-  height: 100%;
+.kontenhomekiri{
+  padding: 280px 0 288px 40px;
   position: relative;
-
+  width: 50%;
 }
-.layanan{
-  background-color: white;
-  height: 100%;
-  position: relative;
-}
-.jasa{
-  background-color: #33CC00;
-  position: relative;
-
-}
-h1{
+.judulhome h1{
   color: white;
+  float: left;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.1rem;
   font-family: "muli-light", sans-serif;
-  font-size: 60px;
-  padding-top: 65px;
-  text-decoration: none;
+  font-size: 51px;
 }
-h3{
+
+.kontenhomekanan {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-top: 14%;
+  width: 50%;
+}
+
+.kontenhomekanan img {
+  padding-left: 45%;
+  vertical-align: bottom;
+  width: 50%;
+}
+
+#about{
+  min-height: 786px;
+  background: #ffffff;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.aboutinfo{
+  padding-bottom: 3.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.judulabout{
+  text-align: center;
+}
+.judulabout h1{
   color: black;
   font-size: 40px;
   font-family: "muli-light", sans-serif;
   text-decoration: none;
 }
-h2{
-  color: white;
-  float: left;
-  margin: 280px 140px;
-  font-family: "muli-light", sans-serif;
-  font-size: 51px; 
-}
-h4{
-  color: black;
 
+.tentang img{
+  width: 100%;
 }
-p.lead {
+
+h1.subjudulabout {
+  font-family: "muli-light", sans-serif;
+  font-size: 40px;
+  line-height: 1.324;
+  color: #151515;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h1.subjudulabout::before {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 200px;
+  background-color: #39b54a;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+p.about{
   font-family: "muli-light", sans-serif;
   font-size: 12px;
   line-height: 1.857;
   color: #838383;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: justify;
 }
-.hiasan{
-  height: 40px;
-  width: 40px;
+
+.visi{
+  padding-bottom: 3.6rem;
+  border-bottom: none;
 }
-h4{
+
+h1.visi{
   text-align: center;
   font-family: "muli-light", sans-serif;
-  font-size: 40px;
-  margin-top: -40px;
-  margin-bottom: 0;
-  margin-right: 0;
   font-style: bold;
+  font-size: 40px;
 }
-.logolayanan{
-  height: 170px;
-  width: 140px;
+p.visi{
+  text-align: center;
+  font-style: italic;
+  margin-top: 4%;
+  font-size: 20px;
+  color: #838383;
 }
-.akhirnyasampekaki{
+
+#organisasi{
+  min-height: 768px;
+  background-color: #33CC00;
+  overflow: hidden;
+}
+
+.org{
+  padding-bottom: 3.6rem;
+  border-bottom: none;
+}
+
+.gambarorg{
+  width: 200px;
+  height: 150px;
   position: relative;
-  background-color: #111111; 
-  width: 100%;
-  height: 200px;
+  overflow: hidden;
+  padding: 10px 0 10px 0;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+
+.kanan{
+  float: right;
+  padding-right: 200px;
+}
+
+.kiri{
+  float: left;
+  padding-left: 200px;
+}
+
+.gambarorg img{
+  border-radius: 2%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.gambarorg:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  border-radius: 50%;
+}
+
+.subjudul h1{
+  color: white;
+  font-size: 20px;
+  font-family: "muli-light", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 2%;
+}
+.judulorg h1{
+  color: white;
+  font-size: 40px;
+  font-family: "muli-light", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 7%;
+}
+
+#layanan{
+  min-height: 768px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.isilayanan{
+  position: relative;
+}
+
+.isilayanan h1{
+  color: black;
+  font-size: 20px;
+  font-family: "muli-light", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 2%;
+}
+
+.isikiri{
+  padding: 80px 0 288px 120px;
+  position: relative;
+  width: 220px;
+}
+
+.isikanan{
+  position: absolute;
+  right: 0;
+  top: 27%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-top: 9%;
+  padding-right: 150px;
+  width: 220px;
+}
+
+.isikanan img{
+  vertical-align: bottom;
+}
+
+.lyn{
+  border-bottom:  none;
+}
+
+.judullayanan h1{
+  color: black;
+  font-size: 40px;
+  font-family: "muli-light", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 6%;
+}
+
+#unit{
+  min-height: 768px;
+  background-color: #33CC00;
+  overflow: hidden;
+}
+
+.un{
+  border-bottom: none;
+}
+.container {
+  grid-template-columns: 66% auto;
+  padding: 0 1em;
+}
+
+.isi3 ul, .isi2 ul {
+  display:grid;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  grid-template-rows: repeat(2, auto);
+}
+
+.isi3 ul{
+  grid-template-columns: repeat(3, auto);
+}
+
+.isi2 ul{
+  grid-template-columns: repeat(2, auto);
+}
+
+.subjudulunit h1, .subjudullain h1{
+  color: white;
+  font-size: 40px;
+  font-family: "muli-light", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 6%;
+}
+
+.subjudullain h1{
+  margin-top: 1%;
+}
+
+.gambarjasa{
+  width: 150px;
+  height: 170px;
+  margin: 0 auto;
+  display: block;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.gambarjasa:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.con{
+  position: relative;
   bottom: 0;
   left: 0;
   display: block;
 }
-.logofoot{
-  height: 120px;
-  width: 100px;
-  padding: 30px 150px;
-  padding-bottom: 0;
+
+.inikaki{
+  background-color: #111111;
 }
-p.foot{
+
+.inikaki img{
+  width: 120px;
+  padding-bottom: 0;
+  padding: 29px 120px;
+}
+
+.almfoot h1{
+  font-family: "muli-light", sans-serif;
+  font-size: 16px;
+  margin-top: 40px;
+  color: white;
+}
+
+p.alamat{
   font-family: "muli-light", sans-serif;
   font-size: 12px;
   line-height: 1.857;
   color: white;
   text-align: justify;
 }
-.tombol{
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #48f442;
   color: white;
   text-align: center;
-  font-size: 12px;
-  background-color: #33CC00;
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  padding: 4px;
-
 }
-.sosmed{
-  width: 100px;
-  height: 50px;
-  padding-top: 10px;
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+@media only screen and (max-width: 1124px){
+  .inikaki img{
+    padding-left: 10px;
+  }
+  h1.subjudulabout::before{
+    width: 100%;
+  }
+  .subjudulabout{
+    text-align: center;
+  }
+  p.about{
+    margin-right: 2%;
+    text-align: justify;
+  }
+  .kolom-four, .kolom-seven{
+    width: 100%;
+  }
+  .gambarjasa{
+    width: 100px;
+    height: 120px;
+  }
+  .subjudulunit h1, .subjudullain h1{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px){
+  .kolom-seven{
+    margin: 0 5px;
+    max-width: 100%;
+  }
+  p.about{
+    padding-right: 12%;
+  } 
+}
+@media only screen and (max-width: 920px){
+  .kontenhomekanan{
+    padding-top: 12%;
+  }
+
+  .kontenhomekanan img{
+    width :25%;
+  }
+
+  .judulhome h1{
+    font-size: 30px;
+  }
+
+  .isikanan{
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0 10px 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .isikiri{
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0 280px 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .kanan{
+    float: none;
+    padding-right: 0;
+  }
+  .kiri{
+    float: none;
+    padding-left: 0;
+  }
+  .isi3 ul, .isi2 ul, .container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .container {
+    text-align:center;
+  }
 }

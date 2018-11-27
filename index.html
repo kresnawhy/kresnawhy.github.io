@@ -1,149 +1,223 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Koperasi UNEJ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js.js"></script>
+	<title>Koperasi UNEJ</title>
 </head>
 <body>
-	<header class="topnav">
+	<header id="header" class="topnav row">
 		<div>
-			<a href="#home"><img src="img/unej.png" style="width: 200px; height: 40px; border: 0 ;"></a>
+			<a href="#home"><img class ="topnav-logo" src="img/unej.png"></a>
 			<div class="topnav-right">
-				<a href="#home">Home</a>
-				<a href="#about">About</a>
-				<a href="#organisasi">Organisasi</a>
-				<a href="#layanan">Layanan</a>
-				<a href="#unit">Unit</a>
-				<a href="Register.html" class="button">Sign Up</a>
+				<a class ="link active" href="#home">Home</a>
+				<a class ="link" href="#about">About</a>
+				<a class ="link" href="#organisasi">Organisasi</a>
+				<a class ="link" href="#layanan">Layanan</a>
+				<a class ="link" href="#unit">Unit</a>
+				<a class ="link" href="tes.html" class="button">Sign Up</a>
 			</div>
 		</div>
 	</header>
-	<div class="home" id="home">
+	<section id="home" class="home">
+		<div class="row konten">
+			<div class="kontenhomekiri">
+				<div class="judulhome">
+					<h1>Selamat Datang</h1>
+				</div>
+			</div>
+			<div class="kontenhomekanan">
+				<img src="img/logo.png">
+			</div>
+		</div>
+	</div>
+</section>
+<section id="about">
+	<div class="row aboutinfo">
+		<div class="judulabout">
+			<h1>Tentang Kami</h1>
+		</div>
+		<div class="tentang">
+			<img src="img/kop.png">
+		</div>
+		<div class="kolom-four">
+			<h1 class="subjudulabout">Sejarah Singkat</h1>
+		</div>
+		<div class="kolom-seven">
+			<p class="about">KPRI Universitass Jember didirikan pada tanggal 2 Agustus 1979 dengan nama Koperasi Pegawai Negeri Universitas Jember(KPN-UNEJ) yang bertujuan ingin membantu masalah keuangan dan meningkatkan kesejahteraan Tenaga Dosen dan Tenaga Administrasi di Lingkungan Universitas Jember.<br>				KPRI-UNEJ dalam kenyataannya tidak hanya beranggotakan Pegawai Negeri Sipil (PNS) saja, tetapi juga non PNS, sehingga sejak Tahun 1993 namannya dirubah menjadi Koperasi Pegawai Republik Indonesia Universitas Jember(KP-RI - Unej).</p>
+		</div>
+	</div>
+	<div class="row visi">
+		<h1 class="visi">Visi</h1>
 		<div>
-			<h2>Selamat Datang</h2>
-			<img src="img/logo.png" class="logo">
+			<p class="visi">"Menjadi Koperasi Terbaik Dalam Mensejahterakan Anggota dan Bermitra Dengan Stakeholders"</p>
+		</div>
+		<div>
+			<h1 class="visi">Misi</h1>
+			<p class="visi">Menyediakan Pelayanan Prima bagi anggota<br><br>Mewujudkan sumber Daya Manusia koperasi yang profesional<br><br>Menyediakan teknologi informasi yang handal<br><br>Membangun jaringan usaha dengan pihak yang berkepentingan<br><br>Meningkatkan social kepada anggota dan masyarakat sekitar<br><br>Bersinergi dengan perguruan tinggi</p>
+		</div>
+	</div>
+</section>
+<section id="organisasi">
+	<div class="row org">
+		<div class="judulorg">
+			<h1>Struktur Organisasi</h1>
+		</div>		
+		<div class="gambarorg">
+			<img src="img/orang/1.jpg">
+		</div>
+		<div class="subjudul">
+			<h1>Ketua Koperasi</h1>
+		</div>
+		<div class="gambarorg">
+			<img src="img/orang/2.jpg">
+		</div>
+		<div class="subjudul">
+			<h1>Wakil Ketua</h1>
+		</div>
+		<div class="gambarorg">
+			<img src="img/orang/3.jpg">
+		</div>
+		<div class="subjudul">
+			<h1>Sekretaris</h1>
+		</div>
+		<div class="kiri">
+			<div class="gambarorg">
+				<img src="img/orang/4.jpg">
+			</div>
+			<div class="subjudul">
+				<h1>Bendahara 1</h1>
+			</div>
+		</div>
+		<div class="kanan">
+			<div class="gambarorg">
+				<img src="img/orang/5.jpg">
+			</div>
+			<div class="subjudul">
+				<h1>Bendahara 2</h1>
+			</div>
+		</div>
+		<div class="kiri">
+			<div class="gambarorg">
+				<img src="img/orang/6.jpg">
+			</div>
+			<div class="subjudul">
+				<h1>Ang. Pengurus 1</h1>
+			</div>
+		</div>
+		<div class="kanan">
+			<div class="gambarorg">
+				<img src="img/orang/7.jpg">
+			</div>
+			<div class="subjudul">
+				<h1>Ang. Pengurus 2</h1>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="layanan">
+	<div class="row lyn">
+		<div class="judullayanan">
+			<h1>Gerai Layanan</h1>
+		</div>
+	</div>
+	<div class="row isilayanan">
+		<div class="isikiri">
+			<input type="image" src="img/org1.png" id="btnanggota">
+			<h1>Layanan Anggota</h1>
+		</div>
+		<div class="isikanan">
+			<input type="image" src="img/org2.png" id="btnumum">
+			<h1>Layanan Umum</h1>
+		</div>
+	</div>
+</section>
+<section id="unit">
+	<div class="row un">
+		<div class="row jasa">
+			<div class="subjudulunit">
+				<h1>Unit Jasa</h1>
+				<div>
+					<input class="gambarjasa" type="image" src="img/1.png" id="btnjs1">
+				</div>
+			</div>
+		</div>
+		<div class="row sp">
+			<div class="subjudullain">
+				<h1>Unit Simpan Pinjam</h1>
+			</div>
+			<div class="container isi3">
+				<ul>
+					<li><input class="gambarjasa" type="image" src="img/2.png" id="btnsp1"></li>
+					<li><input class="gambarjasa" type="image" src="img/3.png" id="btnsp2"></li>
+					<li><input class="gambarjasa" type="image" src="img/4.png" id="btnsp3"></li>
+				</ul>
+			</div>
+			<div class="subjudullain">
+				<h1>Unit Toko</h1>
+			</div>
+			<div class="container isi2">
+				<ul>
+					<li><input class="gambarjasa" type="image" src="img/5.png" id="btntk1"></li>
+					<li><input class="gambarjasa" type="image" src="img/6.png" id="btntk2"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="inikaki">
+	<div class="row con">
+		<div class="kolom-three">
+			<img src="img/logokp.png">
+		</div>
+		<div class="kolom-three">
+			<div class="almfoot">
+				<h1>ALAMAT</h1>
+			</div>
+			<p class="alamat">Jl. Kalimanatan No.27, Krajan Timur, Sumbersari, <br>Kabupaten Jember, Jawa Timur 68121<br><br>TELEPON : (0331)339933</p>
+		</div>
+	</div>
+</footer>
+<div id="umum" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close1">&times;</span>
+      <h2>Layanan Umum</h2>
+    </div>
+    <div class="modal-body">
+      <p>Demi melayani kebutuhan masyarakat baik untuk anggota maupun non-anggota , KP-RI Universitas Jember juga memberikan pelayanan publik, yaitu :</p>
+      <ol>
+      	<li>Pembayaran Listrik</li>
+      	<li>Pembayaran tagihan TELKOM (telepon, speedy, dll)</li>
+      	<li>Pembayaran tagihan Telkomsel (paket HALO)</li>
+      	<li>Pembayaran Tagihan PDAM</li>
+      	<li>Penjualan voucher listrik TOKEN</li>
+      	<li>Pembayaran tagihan INDOVISION</li>
+      </ol>
+    </div>
+  </div>
 
-		</div>
-	</div>
-	<div class="about" id="about">
-		<div>
-			<br>
-			<h3 style="text-align: center; margin-top: 55px; margin-bottom: 10px;">Tentang Kami</h3>
-			<img src="img/kop.png" style="margin-left: 136px; margin-top: 0; margin-bottom: 0; border: 0; width: 1077px;">
-		</div>
-		<div>
-			<table cellpadding="8" border="0">
-				<tr>
-					<td width="500">
-						<h3 style="text-align: left; margin-left: 124px; margin-top: 10px; margin-bottom: 0px;">Sejarah Singkat</h3>
-						<div><img src="img/garis.png" style="margin-left: 124px; margin-top: 0px">
-						</div>
-					</td>
-					<td width="670">
-						<p class="lead" style="color: black;">KPRI Universitass Jember didirikan pada tanggal 2 Agustus 1979 dengan nama Koperasi Pegawai Negeri Universitas Jember(KPN-UNEJ) yang bertujuan ingin membantu masalah keuangan dan meningkatkan kesejahteraan Tenaga Dosen dan Tenaga Administrasi di Lingkungan Universitas Jember.<br>				KPRI-UNEJ dalam kenyataannya tidak hanya beranggotakan Pegawai Negeri Sipil (PNS) saja, tetapi juga non PNS, sehingga sejak Tahun 1993 namannya dirubah menjadi Koperasi Pegawai Republik Indonesia Universitas Jember(KP-RI - Unej).</p>
-					</td>
-				</tr>
-			</table>
-		</div>
-		<div>
-			<img src="img/logo.png" style="margin-top: 10px; margin-left: 136px;" class="hiasan">
-			<img src="img/garismisi.png" style="margin-bottom: 16px; width: 450px;"><h4>VISI</h4>
-			<img src="img/garismisi.png" style=" width: 450px; float: right; margin-top: -38px; margin-right: 180px">
-			<img src="img/logo.png" style="margin-top: -49px; float: right; margin-right: 136px;" class="hiasan">
-		</div>
-		<div>
-			<p class="lead" style="text-align: center; font-style: italic; margin-top: 40px; font-size: 20px;">"Menjadi Koperasi Terbaik Dalam Mensejahterakan Anggota dan Bermitra Dengan Stakeholders"</p>
-		</div>
-		<div>
-			<img src="img/logo.png" style="margin-top: 10px; margin-left: 136px;" class="hiasan">
-			<img src="img/garismisi.png" style="margin-bottom: 16px; width: 450px;"><h4>MISI</h4>
-			<img src="img/garismisi.png" style=" width: 450px; float: right; margin-top: -38px; margin-right: 180px">
-			<img src="img/logo.png" style="margin-top: -49px; float: right; margin-right: 136px;" class="hiasan">
-		</div>
-		<div>
-			<p class="lead" style="text-align: center; font-style: italic; margin-top: 40px; font-size: 16px;">Menyediakan Pelayanan Prima bagi anggota<br><br>Mewujudkan sumber Daya Manusia koperasi yang profesional<br><br>Menyediakan teknologi informasi yang handal<br><br>Membangun jaringan usaha dengan pihak yang berkepentingan<br><br>Meningkatkan social kepada anggota dan masyarakat sekitar<br><br>Bersinergi dengan perguruan tinggi</p>
-		</div>
-	</div>
-	<div class="organisasi" id="organisasi">
-		<div>
-			<h1 style="text-align: center;">STRUKTUR ORGANISASI</h1>
-			<h3 style="text-align: center;">PENGAWAS KP-RI UNEJ</h3>
-		</div>
-		<div>
-			<img src="img/bagan1.png" style="margin-left: 220px;">
-		</div>
-	</div><div style="border-bottom:3px dashed #48f442;">
-	</div>
-	<div class="organisasi">
-		<h3 style="text-align: center; margin-top: 0; padding-top: 80px; margin-bottom: 0;">PENGURUS KP-RI UNEJ</h3>
-		<div>
-			<img src="img/bagan2.png" style="margin-left: 420px; width: 500px; height: 500px; padding-top: 0;">
-		</div>
-	</div>
-	<div class="layanan" id="layanan">
-		<h3 style="text-align: center; padding-top: 70px;">GERAI LAYANAN</h3>
-		<div>
-			<table cellpadding="8" border="0">
-				<tr>
-					<td width="700">
-						<h3 style="font-size: 31px; text-align: right; margin-right: 50px;margin-bottom: 0;">Layanan Anggota</h3>
-					</td>
-					<td width="700">
-						<h3 style="font-size: 31px; margin-left: 70px; margin-bottom: 0;">Layanan Umum</h3>
-					</td>
-				</tr>
-				<tr>
-					<td width="700">
-						<div>
-							<img src="img/org1.png" style="float: right; margin-right: 75px;">
-						</div>
-					</td>
-					<td>
-						<img src="img/org2.png" style="margin-left: 75px;">
-					</td>
-				</tr>
-				<tr>
-					<td height="50"></td>
-				</tr>
-			</table>
-		</div>
-	</div>
-	<div class="jasa" id="unit">
-		<div>
-			<h1 style="font-size: 40px; text-align: center;">UNIT JASA</h1>
-			<img src="img/1.png" class="logolayanan" style="margin-left: 610px;">
-		</div>
-		<div>
-			<h1 style="font-size: 40px; text-align: center; padding-top: 0; ">UNIT SIMPAN PINJAM</h1>
-			<img src="img/2.png" class="logolayanan" style="margin-left: 360px;">
-			<img src="img/3.png" class="logolayanan" style="margin-left: 100px;">
-			<img src="img/4.png" class="logolayanan" style="margin-left: 100px;">
-		</div>
-		<div>
-			<h1 style="font-size: 40px; text-align: center; padding-top: 0; ">UNIT TOKO</h1>
-			<img src="img/6.png" class="logolayanan" style="margin-left: 480px;">
-			<img src="img/7.png" class="logolayanan" style="margin-left: 100px;">
-		</div>
-	</div>
-	<footer class="akhirnyasampekaki">
-		<table cellpadding="0" border="0">
-			<tr>
-				<td width="550">
-					<img src="img/logokp.png" class="logofoot">
-				</td>
-				<td width="400">
-					<h3 style="font-size: 14px; color: white; margin-top: 40px;">ALAMAT</h3>
-					<p class="foot">Jl. Kalimanatan No.27, Krajan Timur, Sumbersari, <br>Kabupaten Jember, Jawa Timur 68121<br><br>TELEPON : (0331)339933</p>
-				</td>
-				<td>
-					<h3 style="font-size: 14px; color: white; margin-top: 40px;">Langganan Berita</h3>
-					<br>
-					<input type="mail" name="email" placeholder="E-mail" size="21px" required pattern=".+@.+.com">
-					<button class="tombol">Subsribe</button><br>
-					<img src="img/sosmed.png" class="sosmed">
-				</td>
-			</tr>
-		</table>
-	</footer>
+</div>
+
+<div id="anggota" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Layanan Anggota</h2>
+    </div>
+    <div class="modal-body">
+      <p>Untuk memberikan pelayanan dan fasilitas kesejahteraan bagi anggota KP-RI Universitas Jember, maka dibuatlah program-program sebagai berikut :</p>
+      <ol>
+      	<li>DANA SOSIAL RAWAT INAP</li>
+      	<li>DANA SOSIAL KEMATIAN</li>
+      	<li>TALI ASIH BAGI YANG MEMASUKI MASA PENSIUN</li>
+      	<li>VOUCHER BELANJA HARI RAYA</li>
+      	<li>VOUCHER BELANJA HARI RAYA</li>
+      	<li>SISA HASIL USAHA</li>
+      </ol>
+  </div>
+</div>
 </body>
 </html>
