@@ -95,14 +95,14 @@
 </style>
 <body>
 	<div class="formkoperasi">
-		<form>
+		<form name="biodata">
 			<img src="logo.png" alt="logo kpri">
 			<h1>Form Pendaftaran Anggota</h1>
 			<h2>KP-RI Universitas Jember</h2>
-			<input type="text" placeholder="Nama" maxlength="30" required>
-			<input type="text" placeholder="Tanggal Lahir" onfocus="(this.type='date')" required>
-			<input type="text" placeholder="Tempat Lahir" required>
-			<input type="text" placeholder="NIP" maxlength="18" required>
+			<input type="text" name="nama" placeholder="Nama" maxlength="30" required>
+			<input type="text" name="tanggal lahir" placeholder="Tanggal Lahir" onfocus="(this.type='date')" required>
+			<input type="text" name="tempat lahir" placeholder="Tempat Lahir" required>
+			<input type="text" name="NIP" placeholder="NIP" maxlength="18" required>
 			<select id="Golongan">
 				<option value="" disabled selected hidden>Golongan</option>
 				<option value="Honorarium">Honorarium</option>
@@ -112,16 +112,34 @@
 				<option value="Golongan IV">Golongan IV</option>
 				<option value="Pengelola KP-RI">Pengelola KP-RI</option>
 			</select>
-			<input type="text" placeholder="Instansi" required>
-			<input type="text" placeholder="Alamat Kantor" required>
-			<input type="text" placeholder="Alamat Rumah" required>
-			<input type="text" placeholder="No. HP" maxlength="13" required>
-			<input type="mail" placeholder="Email" required pattern=".+@.+.com" required>
-			<input type="Password" placeholder="Password" minlength="8" required>
-			<input type="checkbox" value="valid"> Dengan ini maka anda menyetujui<br>
+			<input type="text" name="Instansi" placeholder="Instansi" required>
+			<input type="text" name="Alamat Kantor" placeholder="Alamat Kantor" required>
+			<input type="text" name="Alamat Rumah" placeholder="Alamat Rumah" required>
+			<input type="text" name="hp" placeholder="No. HP" maxlength="13" required>
+			<input type="mail" name="email" placeholder="Email" required pattern=".+@.+.com" required>
+			<input type="Password" name="password" placeholder="Password" minlength="8" required>
+			<input type="checkbox" name="status" value="valid"> Dengan ini maka anda menyetujui<br>
 			<a href="Syarat & Ketentuan.png">Syarat dan ketentuan</a><br>
-			<input type="button" value="Sign Up">
+			<input type="button" value="Sign Up" onclick='terimaInput();'>
 			<a href="login.html">Sudah memiliki akun ?</a>
 		</form>
 	</div>
+		<table border="1" id="tabelinput" style="margin:auto">
+			<tr>
+				<td>Nama</td>
+				<td>Tanggal Lahir</td>
+				<td>Tempat Lahir</td>
+				<td>NIP</td>
+				<td>Golongan</td>
+				<td>Instansi</td>
+				<td>Alamat Kantor</td>
+				<td>Alamat Rumah</td>
+				<td>No. HP</td>
+				<td>E-mail</td>
+				<td>Password</td>
+				<td>Status</td>
+			</tr>
+		</table>
+		<script type="text/javascript" src="script.js"></script>
 </body>
+</html>
