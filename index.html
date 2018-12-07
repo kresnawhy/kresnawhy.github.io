@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="js.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Koperasi UNEJ</title>
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
@@ -12,14 +13,15 @@
 	<header id="header" class="topnav row">
 		<div>
 			<a href="#home"><img class ="topnav-logo" src="img/unej.png"></a>
-			<div class="topnav-right">
-				<a class ="link active" href="#home">Home</a>
-				<a class ="link" href="#about">About</a>
-				<a class ="link" href="#organisasi">Organisasi</a>
-				<a class ="link" href="#layanan">Layanan</a>
-				<a class ="link" href="#unit">Unit</a>
-				<a class ="link" href="tes.html" class="button">Sign Up</a>
+			<div class="topnav-right" id="opo">
+				<a class ="link active" href="#home" onclick="diklik()">Home</a>
+				<a class ="link" href="#about" onclick="diklik()">About</a>
+				<a class ="link" href="#organisasi" onclick="diklik()">Organisasi</a>
+				<a class ="link" href="#layanan" onclick="diklik()">Layanan</a>
+				<a class ="link" href="#unit" onclick="diklik()">Unit</a>
+				<a class ="link" href="form.html" class="button">Sign Up</a>
 			</div>
+			<a href="javascript:void(0);" class="icon" onclick="diklik()"><i class="fa fa-bars"></i></a>
 		</div>
 	</header>
 	<section id="home" class="home">
@@ -179,46 +181,146 @@
 			</div>
 			<p class="alamat">Jl. Kalimanatan No.27, Krajan Timur, Sumbersari, <br>Kabupaten Jember, Jawa Timur 68121<br><br>TELEPON : (0331)339933</p>
 		</div>
+		<div class="kolom-three">
+			<div class="almfoot">
+				<h1>Langganan Berita</h1>
+			</div>
+			<div>
+				<input type="mail" name="email" placeholder="E-mail" size="21px" required pattern=".+@.+.com">
+				<button class="tombol">Subsribe</button><br>
+			</div>
+		</div>
 	</div>
 </footer>
 <div id="umum" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close1">&times;</span>
-      <h2>Layanan Umum</h2>
-    </div>
-    <div class="modal-body">
-      <p>Demi melayani kebutuhan masyarakat baik untuk anggota maupun non-anggota , KP-RI Universitas Jember juga memberikan pelayanan publik, yaitu :</p>
-      <ol>
-      	<li>Pembayaran Listrik</li>
-      	<li>Pembayaran tagihan TELKOM (telepon, speedy, dll)</li>
-      	<li>Pembayaran tagihan Telkomsel (paket HALO)</li>
-      	<li>Pembayaran Tagihan PDAM</li>
-      	<li>Penjualan voucher listrik TOKEN</li>
-      	<li>Pembayaran tagihan INDOVISION</li>
-      </ol>
-    </div>
-  </div>
-
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="close1">&times;</span>
+			<h2>Layanan Umum</h2>
+		</div>
+		<div class="modal-body">
+			<p>Demi melayani kebutuhan masyarakat baik untuk anggota maupun non-anggota , KP-RI Universitas Jember juga memberikan pelayanan publik, yaitu :</p>
+			<ol>
+				<li>Pembayaran Listrik</li>
+				<li>Pembayaran tagihan TELKOM (telepon, speedy, dll)</li>
+				<li>Pembayaran tagihan Telkomsel (paket HALO)</li>
+				<li>Pembayaran Tagihan PDAM</li>
+				<li>Penjualan voucher listrik TOKEN</li>
+				<li>Pembayaran tagihan INDOVISION</li>
+			</ol>
+		</div>
+	</div>
 </div>
-
 <div id="anggota" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Layanan Anggota</h2>
-    </div>
-    <div class="modal-body">
-      <p>Untuk memberikan pelayanan dan fasilitas kesejahteraan bagi anggota KP-RI Universitas Jember, maka dibuatlah program-program sebagai berikut :</p>
-      <ol>
-      	<li>DANA SOSIAL RAWAT INAP</li>
-      	<li>DANA SOSIAL KEMATIAN</li>
-      	<li>TALI ASIH BAGI YANG MEMASUKI MASA PENSIUN</li>
-      	<li>VOUCHER BELANJA HARI RAYA</li>
-      	<li>VOUCHER BELANJA HARI RAYA</li>
-      	<li>SISA HASIL USAHA</li>
-      </ol>
-  </div>
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="close">&times;</span>
+			<h2>Layanan Anggota</h2>
+		</div>
+		<div class="modal-body">
+			<p>Untuk memberikan pelayanan dan fasilitas kesejahteraan bagi anggota KP-RI Universitas Jember, maka dibuatlah program-program sebagai berikut :</p>
+			<ol>
+				<li>DANA SOSIAL RAWAT INAP</li>
+				<li>DANA SOSIAL KEMATIAN</li>
+				<li>TALI ASIH BAGI YANG MEMASUKI MASA PENSIUN</li>
+				<li>VOUCHER BELANJA HARI RAYA</li>
+				<li>VOUCHER BELANJA HARI RAYA</li>
+				<li>SISA HASIL USAHA</li>
+			</ol>
+		</div>
+	</div>
+</div>
+<div id="jasa" class="modal">
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="close2">&times;</span>
+			<h2>Jasa UMUM dan PPOB</h2>
+		</div>
+		<div class="modal-body">
+			<p>Untuk memenuhi kebutuhan Anggota di bidang jasa, KP-RI Unej juga menyediakan layanan unit jasa, beberapa layanan jasa yang disediakan adalah :</p>
+			<ol>
+				<li>Jasa Pembayaran Tagihan Listrik (untuk Umum dan anggota)</li>
+				<li>Jasa Penjualan Token Listrik (untuk Umum dan anggota)</li>
+				<li>Jasa Pembayaran Tagihan TELKOM (telepon, speedy, flexy) (untuk Umum dan   anggota)</li>
+				<li>Jasa Pembayaran Tagihan Air/ PDAM (untuk Umum dan anggota)</li>
+				<li>Jasa Pengurusan STNK (untuk Anggota)</li>
+				<li>Jasa Pembayaran tagihan TELKOMSEL/ Halo (untuk Umum dan anggota)</li>
+			</ol>
+		</div>
+	</div>
+</div>
+<div id="sp1" class="modal">
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="close3">&times;</span>
+			<h2>Unit Simpanan</h2>
+		</div>
+		<div class="modal-body">
+			<ol>
+				<li> Simpanan Pokok adalah : simpanan yang di bayar satu kali selama menjadi anggota. Besarnya simpanan bergantung dari hasil kesepakatan pengurus dan anggota koperasi. Simpanan hanya bisa di ambil kembali ketika keluar dari keanggotaan Koperasi. Untuk saat ini Simpanan pokok untuk menjadi anggota KP-RI Universitas Jember sebesar Rp. 100.000</li>
+				<li>Simpanan Wajib adalah : simpanan yang wajib di bayar sebulan sekali. Besarnya simpanan bergantung dari hasil kesepakatan pengurus dan anggota koperasi.</li>
+				<li>Simpanan Khusus : simpanan yang besarnya tidak di tentukan, tetapi bergantung kepada kemampuan anggota. Simpanan sukarela dapat di setorkan setiap saat tetapi hanya bisa diambil sesuai jangka waktu tertentu ( 1 tahun) , dengan jasa 9 % per Tahun</li>
+				<li>Simpanan Suka Rela adalah : simpanan yang besarnya tidak di tentukan, tetapi bergantung kepada kemampuan anggota, Simpanan sukarela dapat diambil hanya pada jangka waktu tertentu.</li>
+			</ol>
+		</div>
+	</div>
+</div>
+<div id="pinjaman" class="modal">
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="close4">&times;</span>
+			<h2>Pinjaman</h2>
+		</div>
+		<div class="modal-body">
+			<p>Diberitahukan kepada seluruh Anggota KP-RI UNIVERSITAS  JEMBER<br>
+				ANGGOTA DAPAT MEMINJAM UANG TANPA MENUTUP SISA PINJAMAN YANG LAMA (KOMPEN)<br>
+			Di informasikan bahwa plafon pinjaman Uang untuk Anggota biasa menjadi Rp.200 juta, ANGSURAN dapat dicicil maksimal : 15 tahun (180 bulan) sedangkan Pinjaman Barang maksimal sebesar Rp. 50 Juta  dapat dicicil maksimal : 10 tahun (120 bulan)</p>
+			<ol>
+				<li>Anggota yang berstatus honorer (KONTRAK 1 TAHUN) bisa mengajukan pinjaman maksimal Rp.7 juta ,  termasuk  penambahan jangka waktu angsuran tenaga honorer sebesar maksimal 2 kali masa kontrak.</li>
+				<li>Anggota yang berstatus honorer harian lepas (KONBTRAK 6 BULAN) bisa mengajukan pinjaman MAKSIMAL  dari Rp. 4 juta  termasuk  penambahan jangka waktu angsuran tenaga honorer sebesar maksimal 2 kali masa kontrak.</li>
+			</ol>
+		</div>
+	</div>
+</div>
+<div id="lebaran" class="modal">
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="close5">&times;</span>
+			<h2>Tabungan Hari Raya</h2>
+		</div>
+		<div class="modal-body">
+			<p>Tabungan Hari Raya adalah salah satu program terbaru dari KP-RI Universitas Jember yang diluncurkan pada tahun 2013. Program tabungan hari raya ini bersifat sukarela, hampir sama dengan simpanan bedanya adalah untuk tabungan hari raya nilainya ditetapkan dulu, selanjutnya akan dipotongkan dalam tagihan bulan di bendahara perwakilan masing-masing unit kerja.<br><br>
+			Tidak ada syarat khusus untuk mengikuti program ini dan tidak ada biaya atau potongan apapun, selama menjadi anggota KP-RI Unej maka semua anggota berhak progam ini. tidak sama dengan simpanan, Tabungan hari raya ini mendapat jasa 1 % setiap bulannya, dan akan dibagikan kepada anggota yang bersangkutan setiap tahun menjelang Hari Raya Idul Fitri.</p>
+		</div>
+	</div>
+</div>
+<div id="produk" class="modal">
+	<div class="modal-content">
+		<div class="modal-header">
+			<span class="close6">&times;</span>
+			<h2>Produk</h2>
+		</div>
+		<div class="modal-body">
+			<p>Produk-produk yang disediakan oleh KP-RI Universitas Jember sangatlah beragam dan memliki harga yang bersaing, jenis produk yang dijual antara lain :
+				<br><br>
+				LANTAI 1 KP-RI UNEJ
+			</p>
+			<ol>
+				<li>Kebutuhan pokok (Konsumsi) : merupakan bahan pokok sehari-hari seperti Beras, gula, minyak, bumbu-bumbu dapur, mie instan, susu bayi, susu dewasa, dll.</li>
+				<li>Kebutuhan pokok (non-konsumsi) : sabun mandi, sabun cuci, kosmetik, pembersih ruangan, parfume dan banyak lagi.</li>
+				<li>Snack, softdrink dan makanan ringan</li>
+			</ol>
+			<p><br><br>
+				LANTAI 2 KP-RI UNEJ
+			</p>
+			<ol>
+				<li>Peralatan Elektronik : kipas angin, TV, Tape, DVD, Magic com, Setrika, Lampu dll</li>
+				<li>Alat-alat listrik : sekering, stop kontak, skakel, kabel listrik, adaptor, dll</li>
+				<li>Peralatan rumah tangga : bak mandi bayi, keranjang, alat makan, alat kebersihan dll</li>
+				<li>Tekstil : pakaian, kerudung, sarung, mukena, tas, dompet dll</li>
+			</ol>
+		</div>
+	</div>
 </div>
 </body>
 </html>

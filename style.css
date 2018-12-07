@@ -96,6 +96,10 @@ section {
   transform: translateX(-50%);
 }
 
+.topnav .icon{
+  display: none;
+}
+
 .row{
   width: 100%;
   max-width: 1170px;
@@ -446,6 +450,10 @@ p.visi{
   text-align: center;
   text-decoration: none;
   margin-top: 6%;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .subjudullain h1{
@@ -503,6 +511,17 @@ p.alamat{
   text-align: justify;
 }
 
+.tombol{
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  background-color: #33CC00;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -541,14 +560,7 @@ p.alamat{
   to {top:0; opacity:1}
 }
 
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close1 {
+.close, .close1, .close2, .close3, .close4, .close5, .close6 {
   color: white;
   float: right;
   font-size: 28px;
@@ -564,6 +576,41 @@ p.alamat{
 
 .close1:hover,
 .close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close5:hover,
+.close5:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close6:hover,
+.close6:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -617,9 +664,52 @@ p.alamat{
   }
   p.about{
     padding-right: 12%;
+  }
+  .judulorg{
+    padding-top: 7%;
   } 
+  .judullayanan{
+    padding-top: 7%;
+  }
 }
 @media only screen and (max-width: 920px){
+  .topnav-right a {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav, .responsive {
+    position: fixed;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+  }
+
+  .icon{
+    top: 17%;
+  }
+
+  .topnav a.active{
+    background-color: #ddd;
+    color: #111111;
+  }
+
+  .topnav, .responsive, .icon {
+    position: fixed;
+    right: 0;
+  }
+  .topnav, .responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    background-color: #111111;
+  }
+
   .kontenhomekanan{
     padding-top: 12%;
   }
